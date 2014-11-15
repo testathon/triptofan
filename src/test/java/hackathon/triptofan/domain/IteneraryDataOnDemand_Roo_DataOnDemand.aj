@@ -24,7 +24,13 @@ privileged aspect IteneraryDataOnDemand_Roo_DataOnDemand {
     
     public Itenerary IteneraryDataOnDemand.getNewTransientItenerary(int index) {
         Itenerary obj = new Itenerary();
+        setName(obj, index);
         return obj;
+    }
+    
+    public void IteneraryDataOnDemand.setName(Itenerary obj, int index) {
+        String name = "name_" + index;
+        obj.setName(name);
     }
     
     public Itenerary IteneraryDataOnDemand.getSpecificItenerary(int index) {

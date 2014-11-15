@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
+import javax.persistence.ElementCollection;
 
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class Itenerary {
+public class Event {
 
     /**
      */
@@ -18,6 +19,20 @@ public class Itenerary {
 
     /**
      */
+    private String summary;
+
+    /**
+     */
     @ManyToMany(cascade = CascadeType.ALL)
-    private List<Event> events = new ArrayList<Event>();
+    private List<Tag> tags = new ArrayList<Tag>();
+
+    /**
+     */
+    @ElementCollection
+    private List<Cost> cost = new ArrayList<Cost>();
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Location> locations = new ArrayList<Location>();
 }

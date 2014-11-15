@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="itenerarys/list">
+        <put-attribute name="body" value="/WEB-INF/views/itenerarys/list.jspx"/>
+    </definition>
+<definition extends="default" name="itenerarys/show">
+        <put-attribute name="body" value="/WEB-INF/views/itenerarys/show.jspx"/>
+    </definition>
+<definition extends="default" name="itenerarys/create">
+        <put-attribute name="body" value="/WEB-INF/views/itenerarys/create.jspx"/>
+    </definition>
+<definition extends="default" name="itenerarys/update">
+        <put-attribute name="body" value="/WEB-INF/views/itenerarys/update.jspx"/>
+    </definition>
+</tiles-definitions>

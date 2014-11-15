@@ -8,3 +8,18 @@ exit
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-15 14:01:07
 web mvc setup
 web mvc all --package ~.web
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-15 15:22:52
+field list --class ~.domain.Itenerary --type ~.domain.Event --fieldName events
+entity jpa --class ~.domain.Tag
+field string --class ~.domain.Tag --fieldName subject
+field list --class ~.domain.Event --type ~.domain.Tag --fieldName tags
+field list --class ~.domain.TripUser --type ~.domain.Itenerary --fieldName createdIteneries
+field list --class ~.domain.TripUser --type ~.domain.Itenerary --fieldName favoriteIteneries
+enum type --class ~.domain.Cost
+// [failed] enum constant --name Free
+enum constant --name NoCost
+enum constant --name Cheap
+enum constant --name Medium
+enum constant --name Expensive
+field list --class ~.domain.Event --type ~.domain.Cost --fieldName cost
+field list --class ~.domain.Event --type ~.domain.Location --fieldName locations

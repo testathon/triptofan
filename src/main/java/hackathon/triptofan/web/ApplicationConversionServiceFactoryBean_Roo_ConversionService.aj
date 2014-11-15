@@ -16,7 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Itenerary, String> ApplicationConversionServiceFactoryBean.getIteneraryToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.Itenerary, java.lang.String>() {
             public String convert(Itenerary itenerary) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(itenerary.getName()).toString();
             }
         };
     }

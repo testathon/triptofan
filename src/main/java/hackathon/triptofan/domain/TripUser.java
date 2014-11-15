@@ -10,7 +10,11 @@ import javax.persistence.ManyToMany;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class Itenerary {
+public class TripUser {
+
+    /**
+     */
+    private String email;
 
     /**
      */
@@ -18,6 +22,15 @@ public class Itenerary {
 
     /**
      */
+    private String password;
+
+    /**
+     */
     @ManyToMany(cascade = CascadeType.ALL)
-    private List<Event> events = new ArrayList<Event>();
+    private List<Itenerary> createdIteneries = new ArrayList<Itenerary>();
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Itenerary> favoriteIteneries = new ArrayList<Itenerary>();
 }

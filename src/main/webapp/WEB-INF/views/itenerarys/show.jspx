@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_hackathon_triptofan_domain_Itenerary" object="${itenerary}" path="/itenerarys" z="LZeVZ7DxAGp8HBqWawgwXXry5LA=">
+        <field:display field="name" id="s_hackathon_triptofan_domain_Itenerary_name" object="${itenerary}" z="PGqyGujOBkvGDEASPG4/OefjF4A="/>
+        <field:display field="events" id="s_hackathon_triptofan_domain_Itenerary_events" object="${itenerary}" z="roY0KbTyWaNS8T9KbKTzhrSKzQ8="/>
+    </page:show>
+</div>

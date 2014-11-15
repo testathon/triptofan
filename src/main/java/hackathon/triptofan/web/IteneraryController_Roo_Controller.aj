@@ -3,6 +3,7 @@
 
 package hackathon.triptofan.web;
 
+import hackathon.triptofan.domain.Event;
 import hackathon.triptofan.domain.Itenerary;
 import hackathon.triptofan.web.IteneraryController;
 import java.io.UnsupportedEncodingException;
@@ -86,6 +87,7 @@ privileged aspect IteneraryController_Roo_Controller {
     
     void IteneraryController.populateEditForm(Model uiModel, Itenerary itenerary) {
         uiModel.addAttribute("itenerary", itenerary);
+        uiModel.addAttribute("events", Event.findAllEvents());
     }
     
     String IteneraryController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

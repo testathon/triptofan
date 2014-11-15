@@ -2,15 +2,11 @@ package hackathon.triptofan.domain;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
-import java.util.ArrayList;
-import java.util.List;
-import javax.persistence.CascadeType;
-import javax.persistence.ManyToMany;
 
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class Itenerary {
+public class Location {
 
     /**
      */
@@ -18,6 +14,21 @@ public class Itenerary {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<Event> events = new ArrayList<Event>();
+    private String addrLine1;
+
+    /**
+     */
+    private String addrLine2;
+
+    /**
+     */
+    private String city;
+
+    /**
+     */
+    private String stateCode;
+    
+    /**
+     */
+    private Number zip;
 }
