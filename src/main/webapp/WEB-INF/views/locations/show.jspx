@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_hackathon_triptofan_domain_Location" object="${location}" path="/locations" z="2fWMgE/vAOerpK3XruPFGwEoRrc=">
+        <field:display field="name" id="s_hackathon_triptofan_domain_Location_name" object="${location}" z="vX0MOQ9vPksQ3vUJ+fz891cq8Co="/>
+        <field:display field="addrLine1" id="s_hackathon_triptofan_domain_Location_addrLine1" object="${location}" z="tdVp0vdJL+IUqjGgN8NFzIodd2w="/>
+        <field:display field="addrLine2" id="s_hackathon_triptofan_domain_Location_addrLine2" object="${location}" z="ZFuGe2mlwMBwOPpr8wZUFHNVrDE="/>
+        <field:display field="city" id="s_hackathon_triptofan_domain_Location_city" object="${location}" z="DwPoVZvYgRKkxOYu0P/hXYjdR+E="/>
+        <field:display field="stateCode" id="s_hackathon_triptofan_domain_Location_stateCode" object="${location}" z="ux09nPKulonYNNy50LLJmkGRbLQ="/>
+        <field:display field="zip" id="s_hackathon_triptofan_domain_Location_zip" object="${location}" z="z+iyohO5sWU8GNqc5McURrqkLl8="/>
+    </page:show>
+</div>

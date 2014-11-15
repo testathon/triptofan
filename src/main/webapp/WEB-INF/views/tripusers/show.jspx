@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_hackathon_triptofan_domain_TripUser" object="${tripuser}" path="/tripusers" z="vUQshsvRbLKh9W6o9pg1g/sK+4w=">
+        <field:display field="email" id="s_hackathon_triptofan_domain_TripUser_email" object="${tripuser}" z="B7vLXslmXpriGJ98prIs7cL6QNw="/>
+        <field:display field="name" id="s_hackathon_triptofan_domain_TripUser_name" object="${tripuser}" z="TRiDtdS5LkFcICVsmSb5HoLffDQ="/>
+        <field:display field="password" id="s_hackathon_triptofan_domain_TripUser_password" object="${tripuser}" z="W4lkHEBbMjq1+dDRgginPb+O+9Q="/>
+        <field:display field="createdIteneries" id="s_hackathon_triptofan_domain_TripUser_createdIteneries" object="${tripuser}" z="yGUbKI1/AQ2zZAkJ35oxknU09U8="/>
+        <field:display field="favoriteIteneries" id="s_hackathon_triptofan_domain_TripUser_favoriteIteneries" object="${tripuser}" z="7A8m6+nulvk9Vf1VdMbjCoT8Ta8="/>
+    </page:show>
+</div>

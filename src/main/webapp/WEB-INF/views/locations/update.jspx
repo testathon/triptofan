@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_hackathon_triptofan_domain_Location" modelAttribute="location" path="/locations" versionField="Version" z="QPnZg5raT9gqfwwpQX7MKmp4te8=">
+        <field:input field="name" id="c_hackathon_triptofan_domain_Location_name" z="j0K+ll3u73iSY3DPZGCl0p6uGhM="/>
+        <field:input field="addrLine1" id="c_hackathon_triptofan_domain_Location_addrLine1" z="HwntfNsV7PhMV2hDntbgYT+XkOc="/>
+        <field:input field="addrLine2" id="c_hackathon_triptofan_domain_Location_addrLine2" z="f2Rebn2DdPOSL15DzmxutTeW2N0="/>
+        <field:input field="city" id="c_hackathon_triptofan_domain_Location_city" z="McPp1cPz48R3EGO8Z27Bcs/2r2M="/>
+        <field:input field="stateCode" id="c_hackathon_triptofan_domain_Location_stateCode" z="GNZPWzQQ7iRE23lo5nC5lEzeBUs="/>
+        <field:input field="zip" id="c_hackathon_triptofan_domain_Location_zip" z="onB9uQRPgYZBmzI5Zvmn+XWK1v0="/>
+    </form:update>
+</div>
