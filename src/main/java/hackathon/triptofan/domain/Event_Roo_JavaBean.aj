@@ -43,12 +43,12 @@ privileged aspect Event_Roo_JavaBean {
         this.cost = cost;
     }
     
-    public List<Location> Event.getLocations() {
-        return this.locations;
+    public Location Event.getLocation() {
+        return this.location;
     }
     
-    public void Event.setLocations(List<Location> locations) {
-        this.locations = locations;
+    public void Event.setLocation(Location location) {
+        this.location = location;
     }
     
 }

@@ -7,6 +7,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
 import javax.persistence.ElementCollection;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -33,6 +34,6 @@ public class Event {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<Location> locations = new ArrayList<Location>();
+    @ManyToOne
+    private Location location;
 }
