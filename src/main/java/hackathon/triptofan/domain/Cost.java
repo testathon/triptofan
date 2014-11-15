@@ -2,5 +2,5 @@ package hackathon.triptofan.domain;
 
 public enum Cost {
 
-    NoCost, Cheap, Medium, Expensive
+    NO_COST, CHEAP, MEDIUM, EXPENSIVE
 }
