@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_hackathon_triptofan_domain_TripUser" items="${tripusers}" z="NE9WZCS0j28mzUhVdhW2TjFLP0c=">
+        <table:table data="${tripusers}" id="l_hackathon_triptofan_domain_TripUser" path="/tripusers" z="Vkc7sv6GiD0C8LaEOaDFxDZvJtE=">
+            <table:column id="c_hackathon_triptofan_domain_TripUser_email" property="email" z="vgLp7bet0B48z28pZMO4RB6o6vQ="/>
+            <table:column id="c_hackathon_triptofan_domain_TripUser_name" property="name" z="WrH7SaQgQpMqTXX3g6Q9h7d1BTk="/>
+            <table:column id="c_hackathon_triptofan_domain_TripUser_password" property="password" z="RKpCjD+EpbrpDW+TvmuWozJ73Ro="/>
+            <table:column id="c_hackathon_triptofan_domain_TripUser_createdIteneries" property="createdIteneries" z="RJRLVBGALkno+f4iZJANjxrpuQw="/>
+            <table:column id="c_hackathon_triptofan_domain_TripUser_favoriteIteneries" property="favoriteIteneries" z="dPMipr/+9lrHnCZp8TCj+2cDdsI="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_hackathon_triptofan_domain_Event" modelAttribute="event" path="/events" render="${empty dependencies}" z="qyxg3O2l6VK1nortREn7rM3LiXU=">
+        <field:input field="name" id="c_hackathon_triptofan_domain_Event_name" z="d2iErJusOR+f2BJIeG1ykg7DEqo="/>
+        <field:input field="summary" id="c_hackathon_triptofan_domain_Event_summary" z="/fKby2bEDamE7FvlZbzwoSG4tMo="/>
+        <field:select field="tags" id="c_hackathon_triptofan_domain_Event_tags" itemValue="id" items="${tags}" multiple="true" path="/tags" z="0+P+T2wcoAzBPFPOi6Sze2HL/Bg="/>
+        <field:select field="cost" id="c_hackathon_triptofan_domain_Event_cost" items="${costs}" path="costs" z="0D/VDsAgGRq2p9IsED93nM46LcQ="/>
+        <field:select field="location" id="c_hackathon_triptofan_domain_Event_location" itemValue="id" items="${locations}" path="/locations" z="fwIef9kvJIc3/KzV8zzkHr9CJc8="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_hackathon_triptofan_domain_Event" render="${not empty dependencies}" z="TG2t4HkbrLxodbU51o6m0J6h8vE="/>
+</div>

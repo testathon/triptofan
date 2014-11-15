@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_hackathon_triptofan_domain_Event" object="${event}" path="/events" z="SaJObJ71RjJgb+611FRs1nWcdc0=">
+        <field:display field="name" id="s_hackathon_triptofan_domain_Event_name" object="${event}" z="d2TdF7Cz/EgcKtnDwVqH9p87u58="/>
+        <field:display field="summary" id="s_hackathon_triptofan_domain_Event_summary" object="${event}" z="41A3a2jSL2Sjokxe67dJCHcWtjI="/>
+        <field:display field="tags" id="s_hackathon_triptofan_domain_Event_tags" object="${event}" z="t46wKTEJ/roaI7h5SEq6ljlxveE="/>
+        <field:display field="cost" id="s_hackathon_triptofan_domain_Event_cost" object="${event}" z="a9zB+G3lXipdJQBEzgJ6GghQQN0="/>
+        <field:display field="location" id="s_hackathon_triptofan_domain_Event_location" object="${event}" z="1ljVvdF9x7wXb5mGDQQYXWlE0hg="/>
+    </page:show>
+</div>

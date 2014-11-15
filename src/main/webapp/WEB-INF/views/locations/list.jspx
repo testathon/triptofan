@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_hackathon_triptofan_domain_Location" items="${locations}" z="V80m4+U8NlO8wxU5VvkZTTcjJK0=">
+        <table:table data="${locations}" id="l_hackathon_triptofan_domain_Location" path="/locations" z="QEvdQqhGSIQdELDWiVN/j96rV/Y=">
+            <table:column id="c_hackathon_triptofan_domain_Location_name" property="name" z="XRKSR2u3dPNNhn3akD18ghkVaBA="/>
+            <table:column id="c_hackathon_triptofan_domain_Location_addrLine1" property="addrLine1" z="awUIG6K+bcEAZSmA5MI5qKpXw+s="/>
+            <table:column id="c_hackathon_triptofan_domain_Location_addrLine2" property="addrLine2" z="CQGm0v6XNtfJB3fV79MOq6btd2I="/>
+            <table:column id="c_hackathon_triptofan_domain_Location_city" property="city" z="9DBKu9L1wo2qdkvqVD8qck9ccDg="/>
+            <table:column id="c_hackathon_triptofan_domain_Location_stateCode" property="stateCode" z="4Svt49spaqmB8fE2VwyEjAWSZs4="/>
+            <table:column id="c_hackathon_triptofan_domain_Location_zip" property="zip" z="GfWlLSPg7dIzMu66nuKcwPqMo54="/>
+        </table:table>
+    </page:list>
+</div>
