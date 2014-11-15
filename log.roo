@@ -1,0 +1,7 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-15 13:41:12
+project --topLevelPackage hackathon.triptofan
+hint
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT 
+entity jpa --class ~.domain.Itenerary --testAutomatically
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-15 13:47:01
