@@ -3,7 +3,11 @@
 
 package hackathon.triptofan.web;
 
+import hackathon.triptofan.domain.Event;
 import hackathon.triptofan.domain.Itenerary;
+import hackathon.triptofan.domain.Location;
+import hackathon.triptofan.domain.Tag;
+import hackathon.triptofan.domain.TripUser;
 import hackathon.triptofan.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -12,6 +16,30 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
+    
+    public Converter<Event, String> ApplicationConversionServiceFactoryBean.getEventToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.Event, java.lang.String>() {
+            public String convert(Event event) {
+                return new StringBuilder().append(event.getName()).append(' ').append(event.getSummary()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Event> ApplicationConversionServiceFactoryBean.getIdToEventConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, hackathon.triptofan.domain.Event>() {
+            public hackathon.triptofan.domain.Event convert(java.lang.Long id) {
+                return Event.findEvent(id);
+            }
+        };
+    }
+    
+    public Converter<String, Event> ApplicationConversionServiceFactoryBean.getStringToEventConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, hackathon.triptofan.domain.Event>() {
+            public hackathon.triptofan.domain.Event convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Event.class);
+            }
+        };
+    }
     
     public Converter<Itenerary, String> ApplicationConversionServiceFactoryBean.getIteneraryToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.Itenerary, java.lang.String>() {
@@ -37,10 +65,94 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Location, String> ApplicationConversionServiceFactoryBean.getLocationToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.Location, java.lang.String>() {
+            public String convert(Location location) {
+                return new StringBuilder().append(location.getName()).append(' ').append(location.getAddrLine1()).append(' ').append(location.getAddrLine2()).append(' ').append(location.getCity()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Location> ApplicationConversionServiceFactoryBean.getIdToLocationConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, hackathon.triptofan.domain.Location>() {
+            public hackathon.triptofan.domain.Location convert(java.lang.Long id) {
+                return Location.findLocation(id);
+            }
+        };
+    }
+    
+    public Converter<String, Location> ApplicationConversionServiceFactoryBean.getStringToLocationConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, hackathon.triptofan.domain.Location>() {
+            public hackathon.triptofan.domain.Location convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Location.class);
+            }
+        };
+    }
+    
+    public Converter<Tag, String> ApplicationConversionServiceFactoryBean.getTagToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.Tag, java.lang.String>() {
+            public String convert(Tag tag) {
+                return new StringBuilder().append(tag.getSubject()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Tag> ApplicationConversionServiceFactoryBean.getIdToTagConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, hackathon.triptofan.domain.Tag>() {
+            public hackathon.triptofan.domain.Tag convert(java.lang.Long id) {
+                return Tag.findTag(id);
+            }
+        };
+    }
+    
+    public Converter<String, Tag> ApplicationConversionServiceFactoryBean.getStringToTagConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, hackathon.triptofan.domain.Tag>() {
+            public hackathon.triptofan.domain.Tag convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Tag.class);
+            }
+        };
+    }
+    
+    public Converter<TripUser, String> ApplicationConversionServiceFactoryBean.getTripUserToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<hackathon.triptofan.domain.TripUser, java.lang.String>() {
+            public String convert(TripUser tripUser) {
+                return new StringBuilder().append(tripUser.getEmail()).append(' ').append(tripUser.getName()).append(' ').append(tripUser.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, TripUser> ApplicationConversionServiceFactoryBean.getIdToTripUserConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, hackathon.triptofan.domain.TripUser>() {
+            public hackathon.triptofan.domain.TripUser convert(java.lang.Long id) {
+                return TripUser.findTripUser(id);
+            }
+        };
+    }
+    
+    public Converter<String, TripUser> ApplicationConversionServiceFactoryBean.getStringToTripUserConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, hackathon.triptofan.domain.TripUser>() {
+            public hackathon.triptofan.domain.TripUser convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), TripUser.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
+        registry.addConverter(getEventToStringConverter());
+        registry.addConverter(getIdToEventConverter());
+        registry.addConverter(getStringToEventConverter());
         registry.addConverter(getIteneraryToStringConverter());
         registry.addConverter(getIdToIteneraryConverter());
         registry.addConverter(getStringToIteneraryConverter());
+        registry.addConverter(getLocationToStringConverter());
+        registry.addConverter(getIdToLocationConverter());
+        registry.addConverter(getStringToLocationConverter());
+        registry.addConverter(getTagToStringConverter());
+        registry.addConverter(getIdToTagConverter());
+        registry.addConverter(getStringToTagConverter());
+        registry.addConverter(getTripUserToStringConverter());
+        registry.addConverter(getIdToTripUserConverter());
+        registry.addConverter(getStringToTripUserConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

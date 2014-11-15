@@ -7,5 +7,21 @@
             <menu:item id="i_itenerary_new" messageCode="global_menu_new" url="/itenerarys?form" z="tgD3xG4DCdOPPNoHSM9Hw+TothA="/>
             <menu:item id="i_itenerary_list" messageCode="global_menu_list" url="/itenerarys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7CT7HfTtkIx3cOlYN078krHsbtc="/>
         </menu:category>
+        <menu:category id="c_location" z="RvMgx8apsPylYygCQ4tMBVfulVw=">
+            <menu:item id="i_location_new" messageCode="global_menu_new" url="/locations?form" z="sW8KSnwNnd9wjssI0lLV1kzOguk="/>
+            <menu:item id="i_location_list" messageCode="global_menu_list" url="/locations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VdKLEljpeTLil2W6A3GdWmSBzXI="/>
+        </menu:category>
+        <menu:category id="c_tag" z="zbrDBteXk3LlkQMQy3xXpSv2428=">
+            <menu:item id="i_tag_new" messageCode="global_menu_new" url="/tags?form" z="c2MR5d7dttBSgnPxMMH7oOEDl6Q="/>
+            <menu:item id="i_tag_list" messageCode="global_menu_list" url="/tags?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HsTcxZ80PNENgslZ1+b/pv8MYug="/>
+        </menu:category>
+        <menu:category id="c_event" z="AURyeKTmOObIARXqfI9DXukJNIE=">
+            <menu:item id="i_event_new" messageCode="global_menu_new" url="/events?form" z="BObcRn250Q23VbXG8kWIXR49efE="/>
+            <menu:item id="i_event_list" messageCode="global_menu_list" url="/events?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MxywFHCy64/coyVU05GEg92ERF4="/>
+        </menu:category>
+        <menu:category id="c_tripuser" z="jN7+5ERGiKKPqCJEraMYUAz35Ek=">
+            <menu:item id="i_tripuser_new" messageCode="global_menu_new" url="/tripusers?form" z="DkQu5Xq8hBodq89vkp5l506JV2c="/>
+            <menu:item id="i_tripuser_list" messageCode="global_menu_list" url="/tripusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="q+5KXZ2sMvxhKrT8+/8CbgRQLcE="/>
+        </menu:category>
     </menu:menu>
 </div>
