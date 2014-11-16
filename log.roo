@@ -25,3 +25,5 @@ field list --class ~.domain.Event --type ~.domain.Cost --fieldName cost
 field list --class ~.domain.Event --type ~.domain.Location --fieldName locations
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-15 15:45:05
 field reference --type ~.domain.Location --fieldName location --class ~.domain.Event
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-15 16:11:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-15 16:16:36
